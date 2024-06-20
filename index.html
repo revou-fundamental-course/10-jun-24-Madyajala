@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+        <form id="temperatureForm">
+            <label for="celsiusInput">Celsius (°C):</label>
+            <input type="number" id="celsiusInput" name="celsiusInput" required>
+            
+            <button type="button" onclick="convertTemperature()">Konversi</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="reverseConversion()">Reverse</button>
+            
+            <label for="fahrenheitOutput">Fahrenheit (°F):</label>
+            <input type="text" id="fahrenheitOutput" readonly>
+            
+            <label for="calculationExplanation">Cara Kalkulasi:</label>
+            <textarea id="calculationExplanation" readonly></textarea>
+        </form>
+        
+        <div class="explanation">
+            <h2>Fahrenheit ke Celsius</h2>
+            <p>Suhu <em>S</em> dalam derajat Fahrenheit (°F) sama dengan suhu <em>S</em> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+            <p>\[ S_{(\text{F})} = (S_{(\text{C})} \times 9/5) + 32 \]</p>
+            <p>atau</p>
+            <p>\[ S_{(\text{F})} = (S_{(\text{C})} \times 1.8) + 32 \]</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
